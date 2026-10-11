@@ -1,0 +1,7 @@
+{"title": "Elite 4 randomizer: starting team",
+ "notes": "Only meaningful with the elite-4-randomizer mod (its code reads this block in free space; the clean ROM has 0xFF here). One row per party slot. Species (random) = a different random species each new game (any of the 386, never a duplicate). Level 0 or above 100 = 60. Held item (none) = no item.",
+ "rows": {"address": "0x08EB1F00", "count": 6, "stride": 8},
+ "label": "Slot {row}",
+ "fields": [{"name": "species", "offset": 0, "type": "u16", "enum": "species", "notes": "internal species id; (random) = 0 or 0xFFFF"},
+            {"name": "level", "offset": 2, "notes": "1-100; 0 or 0xFF = 60"},
+            {"name": "held_item", "offset": 4, "type": "u16", "enum": "items"}]}

@@ -1,0 +1,16 @@
+# elite-4-randomizer: losing to Lorelei sends the player to the Indigo Plateau Pokémon Center
+# (the mod sets the respawn there) and resets the League as usual (VAR_MAP_SCENE_POKEMON_LEAGUE = 0).
+# The loss is forced by writing gBattleOutcome = B_OUTCOME_LOST mid-battle.
+
+state {project}/re/states/title.ss0
+until {e4r_new_game} 6000 START,A
+until 0x0800FDB0 3000 A
+frames 600
+w8 0x02023E8A 2
+# DoWhiteOut
+until 0x08054BDC 6000 A
+frames 900
+expect32 0x03005008 0x02025568 gSaveBlock1Ptr guard
+expect16 0x02025568+0x4 0x000D location = IndigoPlateau_PokemonCenter_1F (group 13, map 0)
+expect16 0x02025568+0x1000+0xD0 0 VAR_MAP_SCENE_POKEMON_LEAGUE reset
+expect8 0x02025568+0xEE0+0x97 0x00 FLAG_DEFEATED_LORELEI clear
