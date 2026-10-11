@@ -23,7 +23,7 @@ Patch your own copy of the game with `elite-4-randomizer-v1.0.bps` using [Rom Pa
 
 ## Tests
 
-4/4 regression tests passed at release (sources and harness scripts in `src/`).
+4/4 regression tests passed at release.
 
 ## Details
 
