@@ -1,6 +1,0 @@
-{"title": "Elite 4 randomizer: starting items",
- "notes": "Only meaningful with the elite-4-randomizer mod (its code reads this block in free space; the clean ROM has 0xFF here). Each row is added to the bag with AddBagItem on a new game. Item (none) = skip the row; quantity 0 or above 999 = 1.",
- "rows": {"address": "0x08EB1F40", "count": 8, "stride": 4},
- "label": "Gift {row}",
- "fields": [{"name": "item", "offset": 0, "type": "u16", "enum": "items"},
-            {"name": "quantity", "offset": 2, "type": "u16"}]}

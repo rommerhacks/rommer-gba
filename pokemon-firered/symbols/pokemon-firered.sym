@@ -70,7 +70,3 @@
 081E3C0C Sqrt
 081E3C10 VBlankIntrWait
 081E3C18 _call_via_r0
-08EB1F00 tbl_e4r_team
-08EB1F40 tbl_e4r_items
-08EBF000 tbl_crawl_tuning
-08EBF040 tbl_crawl_start_items

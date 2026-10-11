@@ -16,4 +16,3 @@ Patches only apply to this exact ROM. Bring your own copy of the game.
 ## Knowledge
 
 - `symbols/` no$gba symbol file (functions, tables)
-- `data/` table specs (record layouts and field meanings; rommergba JSON format)
